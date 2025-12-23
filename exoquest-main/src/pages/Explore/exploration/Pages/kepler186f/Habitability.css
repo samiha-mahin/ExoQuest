@@ -1,0 +1,13 @@
+.habitability {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./kepler_img/Kepler186f_BG3.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.container1 h1 {
+  font-size: 60px;
+}

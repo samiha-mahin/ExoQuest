@@ -1,0 +1,205 @@
+.main {
+  margin: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: url(./map-images/background.png) no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+.logo {
+  width: 200px;
+  padding-top: 8%;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+}
+.main p {
+  font-size: 20px;
+  margin-top: -8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+svg {
+  font-size: 20px;
+}
+.trappist img {
+  width: 40px;
+}
+
+.trappist {
+  position: absolute;
+  left: 45.5%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbit1 10s linear infinite;
+  cursor: pointer;
+}
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+.trappist-outline {
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  border: 1px dotted gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.k22b-outline {
+  height: 420px;
+  width: 420px;
+  border-radius: 50%;
+  border: 1px dotted gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.k22b img {
+  cursor: pointer;
+  width: 60px;
+}
+
+.k22b-lock {
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  background: url(./map-images/lock.png) no-repeat;
+  background-size: 40px;
+  background-position: center;
+}
+.k22b-lock:hover {
+  opacity: 1;
+}
+
+.k22b {
+  position: absolute;
+  left: 45%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbit3 10s linear infinite;
+  cursor: pointer;
+}
+@keyframes orbit3 {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+.gliese-outline {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  border: 1px dotted gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gliese img {
+  width: 60px;
+}
+
+.gliese {
+  position: absolute;
+  left: 45%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbit2 15s linear infinite;
+  cursor: pointer;
+}
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+.k442b-outline {
+  height: 510px;
+  width: 510px;
+  border-radius: 50%;
+  border: 1px dotted gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.k442b img {
+  width: 40px;
+}
+
+.k442b {
+  position: absolute;
+  left: 45%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbit4 20s linear infinite;
+  cursor: pointer;
+}
+@keyframes orbit4 {
+  from {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+  }
+}
+.k186-outline {
+  height: 640px;
+  width: 640px;
+  border-radius: 50%;
+  border: 1px dotted gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.k186 img {
+  width: 80px;
+  animation: scaleUpDown 3s infinite ease-in-out;
+}
+
+@keyframes scaleUpDown {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.k186 {
+  position: absolute;
+  left: 45%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbit5 30s linear infinite;
+  cursor: pointer;
+}
+@keyframes orbit5 {
+  from {
+    transform: rotate(0deg) translateX(310px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(310px) rotate(-360deg);
+  }
+}

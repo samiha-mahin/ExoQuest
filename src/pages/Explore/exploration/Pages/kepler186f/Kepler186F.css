@@ -1,0 +1,97 @@
+.kepler186f {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./kepler_img/Kepler186f_BG.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.kepler186f h1 {
+  font-size: 60px;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40%;
+}
+.buttons {
+  display: flex;
+  gap: 70px;
+}
+.buttons button {
+  height: 50px;
+  width: 150px;
+  background: #454858;
+  border: 1px solid #a8b8c9;
+}
+.buttons button:hover {
+  box-shadow: 2px 2px 15px rgba(182, 215, 235, 0.9);
+}
+.slide {
+  overflow: hidden;
+  height: 400px;
+  width: 700px;
+  border: 1px solid #a8b8c9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(182, 215, 235, 0.9);
+}
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 700px;
+  }
+  30% {
+    left: 700px;
+  }
+  40% {
+    left: 1400px;
+  }
+  50% {
+    left: 1400px;
+  }
+  60% {
+    left: 700px;
+  }
+  70% {
+    left: 700px;
+  }
+  80% {
+    left: 0px;
+  }
+  90% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.slide-show {
+  width: 2100px;
+  height: 400px;
+  margin: 0 0 0 -1400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-play-state: running;
+}
+.img-container {
+  height: 400px;
+  width: 700px;
+  position: relative;
+  float: left;
+}
+.img-container img {
+  height: 400px;
+  width: 700px;
+}

@@ -1,0 +1,10 @@
+.orbital {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./kepler_img/Kepler186f_BG2.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
